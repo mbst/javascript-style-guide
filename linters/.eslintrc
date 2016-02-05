@@ -13,6 +13,7 @@
       "named": "never"
     }],
     "comma-dangle": 0,
-    "func-names": 0
+    "func-names": 0,
+    "quote-props": [2, "consistent-as-needed"]
   }
 }

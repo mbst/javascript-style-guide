@@ -153,6 +153,24 @@ If your editor/IDE isn't listed above, a list of available plugins can be found 
     };
     ```
 
+  - Don't use quotes around keys unless keys contain spaces (should be avoided at all costs) or start with numbers
+  ```javascript
+  // bad
+  var superman = {
+    'type': 'alien'
+  };
+
+  // good
+  var superman = {
+    type: 'alien'
+  };
+
+  // good
+  var superman = {
+    '6thSense': 'bruce willis was dead the whole time'
+  };
+  ```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Arrays
