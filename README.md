@@ -611,7 +611,25 @@ If your editor/IDE isn't listed above, a list of available plugins can be found 
 
 **[⬆ back to top](#table-of-contents)**
 
+## Ternary
 
+- [Ternary operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) are fine so long as the statements are concise. Hint: If they need to span multiple lines you should use `if/else`.
+
+```
+// bad
+age > 18 ? (
+    alert("OK, you can go."),
+    location.assign("continue.html")
+) : (
+    stop = true,
+    alert("Sorry, you are much too young!")
+);
+
+// good
+age > 18 ? location.assign("continue.html") : stop = true;
+```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Comparison Operators & Equality
 
@@ -1215,6 +1233,16 @@ If your editor/IDE isn't listed above, a list of available plugins can be found 
     // good
     this._firstName = 'Panda';
     ```
+
+  - When defining a static/immutable `const` use uppercase
+
+  ```
+  // bad
+  const timeoutDuration = 3000;
+
+  // good
+  const TIMOUT_DURATION = 3000;
+  ```
 
   - When saving a reference to `this` use `self`, but prefer `bind` ([Bind on MDN] (https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind))
 
