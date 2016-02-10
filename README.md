@@ -16,6 +16,7 @@
   1. [Properties](#properties)
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
+  1. [Ternary operators](#ternary-operators)
   1. [Comparison Operators & Equality](#comparison-operators--equality)
   1. [Blocks](#blocks)
   1. [Comments](#comments)
@@ -611,7 +612,7 @@ If your editor/IDE isn't listed above, a list of available plugins can be found 
 
 **[⬆ back to top](#table-of-contents)**
 
-## Ternary
+## Ternary operators
 
 - [Ternary operators](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Conditional_Operator) are fine so long as the statements are concise. Hint: If they need to span multiple lines you should use `if/else`.
 
