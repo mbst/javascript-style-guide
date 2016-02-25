@@ -1266,10 +1266,17 @@ age > 18 ? location.assign("continue.html") : stop = true;
 
     // good
     function() {
-      var _this = this;
+      var self = this;
       return function() {
-        console.log(_this);
+        console.log(self);
       };
+    }
+
+    // better
+    function () {
+      return function() {}
+        console.log(this);
+      }.bind(this);
     }
     ```
 
