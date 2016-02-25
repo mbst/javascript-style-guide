@@ -1237,10 +1237,17 @@ If your editor/IDE isn't listed above, a list of available plugins can be found 
 
     // good
     function() {
-      var _this = this;
+      var self = this;
       return function() {
-        console.log(_this);
+        console.log(self);
       };
+    }
+
+    // better
+    function () {
+      return function() {}
+        console.log(this);
+      }.bind(this);
     }
     ```
 
