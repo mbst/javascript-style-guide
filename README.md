@@ -6,6 +6,7 @@
 ## Table of Contents
 
   1. [Linting](#linting)
+  1. [Strict Mode](#strict-mode)
   1. [Editor Config](#editor-config)
   1. [Types](#types)
   1. [Dates and times](#dates-and-times)
@@ -29,6 +30,7 @@
   1. [Constructors](#constructors)
   1. [Events](#events)
   1. [Modules](#modules)
+  1. [Logging](#logging)
   1. [3rd Party Libraries](#3rd-party-libraries)
   1. [jQuery](#jquery)
   1. [ECMAScript 5 Compatibility](#ecmascript-5-compatibility)
@@ -55,6 +57,9 @@ You must use the relevant plugins for your editor/IDE for this to work. Here is 
 - Sublime Text (Requires [Sublime Linter](http://www.sublimelinter.com/en/latest/) and [Sublime Linter ESLint](https://github.com/roadhump/SublimeLinter-eslint))
 - Atom (Requires [Atom Linter](https://github.com/atom-community/linter) and [Linter ESLint](https://github.com/AtomLinter/linter-eslint))
 - Webstorm ([Docs on enabling ESLint](https://www.jetbrains.com/webstorm/help/eslint.html))
+
+## Strict Mode
+Always declare `'use strict';` at the top of every javascript file. This will ensure that any linters used know that all files are in strict mode.
 
 ## Editor Config
 [BESK](https://bitbucket.org/mbst/besk) and [FESK](https://bitbucket.org/mbst/fesk) contain an `.editorconfig` file with out common editor settings. For this to take effect you must install the relevant [Editor Config](http://editorconfig.org) plugin for your editor/IDE. Some common ones are:
@@ -1515,6 +1520,12 @@ age > 18 ? location.assign("continue.html") : stop = true;
       global.FancyInput = FancyInput;
     }(this);
     ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Logging
+
+Always use a wrapper for logging rather than using `console.log()`. FESK uses [loglevel](https://github.com/pimterry/loglevel) by default and AngularJS has `$log` built in.
 
 **[⬆ back to top](#table-of-contents)**
 
