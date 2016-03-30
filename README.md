@@ -1525,7 +1525,7 @@ age > 18 ? location.assign("continue.html") : stop = true;
 
 ## Logging
 
-Always use a wrapper for logging rather than using `console.log()`. FESK uses [loglevel](https://github.com/pimterry/loglevel) by default and AngularJs has `$log` built in.
+Always use a wrapper for logging rather than using `console.log()`. FESK uses [loglevel](https://github.com/pimterry/loglevel) by default and AngularJS has `$log` built in.
 
 **[⬆ back to top](#table-of-contents)**
 
